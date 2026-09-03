@@ -1,0 +1,115 @@
+/*
+ * PORTAL ESCOLAR - ARQUIVO PARA O ALUNO ESTILIZAR
+ *
+ * O HTML já está pronto.
+ * Desafio: criar uma identidade visual completa utilizando CSS.
+ *
+ * Sugestões:
+ * 1. Defina cores para a página.
+ * 2. Escolha uma tipografia.
+ * 3. Organize o cabeçalho e o menu.
+ * 4. Crie cards com boa hierarquia visual.
+ * 5. Estilize os botões.
+ * 6. Melhore espaçamentos e alinhamentos.
+ * 7. Utilize Flexbox e Grid.
+ * 8. Crie uma versão responsiva para celulares.
+ */
+
+/* Comece seu projeto abaixo */
+
+/* Exemplo de estrutura:
+body { }
+.container { }
+header { }
+nav { }
+nav a { }
+.hero { }
+.cards { }
+.card { }
+.botao { }
+footer { }
+
+@media (max-width: 768px) {
+    ...
+}
+*/
+/* =========================
+   HEADER
+========================= */
+
+header {
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 18px 30px;
+
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* LOGO */
+
+.logo {
+    color: #123d7a;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+/* MENU */
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: auto;
+}
+
+nav a {
+    position: relative;
+
+    color: #14213d;
+    text-decoration: none;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    padding: 10px 0;
+
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #1769e0;
+}
+
+/* BOTÃO */
+
+.btn-login {
+    background: #1769e0;
+    color: white;
+
+    text-decoration: none;
+
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    white-space: nowrap;
+
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    background: #0d4fa8;
+}
