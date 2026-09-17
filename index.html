@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
+    
+<header>
     <div class="container">
 
         <a href="index.html" class="logo">
@@ -30,31 +31,102 @@
 </header>
 
     <main class="container">
-        <section class="hero">
-            <h2>Bem-vindo ao Portal Escolar</h2>
-            <p>Escolha uma área para acessar as principais informações do sistema.</p>
-        </section>
 
-        <section class="cards">
-            <article class="card">
-                <h3>Área do Aluno</h3>
-                <p>Consulte notas, frequência, disciplinas e avisos.</p>
-                <a class="botao" href="aluno.html">Acessar</a>
-            </article>
+    <section class="hero">
+        <h2>Bem-vindo ao Portal Escolar</h2>
+        <p>
+            Escolha uma área para acessar as principais
+            informações do sistema.
+        </p>
+    </section>
 
-            <article class="card">
-                <h3>Área do Professor</h3>
-                <p>Acesse turmas, notas, frequência e comunicados.</p>
-                <a class="botao" href="professor.html">Acessar</a>
-            </article>
 
-            <article class="card">
-                <h3>Área Administrativa</h3>
-                <p>Gerencie alunos, professores, turmas e relatórios.</p>
-                <a class="botao" href="administrativo.html">Acessar</a>
-            </article>
-        </section>
-    </main>
+    <section class="areas">
+
+        <!-- CARD ALUNO -->
+        <article class="area-card card-aluno">
+
+            <div class="card-topo">
+
+                <div class="card-icone">
+                    🎓
+                </div>
+
+                <div>
+                    <h2>Área do Aluno</h2>
+
+                    <p>
+                        Consulte suas notas, frequência,
+                        disciplinas e avisos da escola.
+                    </p>
+                </div>
+
+            </div>
+
+            <a href="aluno.html" class="btn-area">
+                Acessar Área do Aluno
+            </a>
+
+        </article>
+
+
+        <!-- CARD PROFESSOR -->
+        <article class="area-card card-professor">
+
+            <div class="card-topo">
+
+                <div class="card-icone">
+                    👨‍🏫
+                </div>
+
+                <div>
+                    <h2>Área do Professor</h2>
+
+                    <p>
+                        Gerencie suas turmas, lance notas,
+                        controle a frequência e acompanhe
+                        o desempenho dos alunos.
+                    </p>
+                </div>
+
+            </div>
+
+            <a href="professor.html" class="btn-area">
+                Acessar Área do Professor
+            </a>
+
+        </article>
+
+
+        <!-- CARD ADMINISTRATIVO -->
+        <article class="area-card card-admin">
+
+            <div class="card-topo">
+
+                <div class="card-icone">
+                    🏫
+                </div>
+
+                <div>
+                    <h2>Área Administrativa</h2>
+
+                    <p>
+                        Gerencie alunos, professores,
+                        turmas e relatórios da escola.
+                    </p>
+                </div>
+
+            </div>
+
+            <a href="administrativo.html" class="btn-area">
+                Acessar Área Administrativa
+            </a>
+
+        </article>
+
+    </section>
+
+</main>
 
     <footer>
         <p>&copy; 2026 Portal Escolar</p>
