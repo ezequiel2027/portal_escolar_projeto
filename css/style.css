@@ -132,7 +132,7 @@ body {
     margin-bottom: 15px;
     font-size: 38px;
     color: #123d7a;
-}
+}/*
 .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -143,7 +143,7 @@ body {
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-}
+}*/
 .botao {
     display: inline-block;
     background-color: #1769e0;
@@ -155,4 +155,218 @@ body {
 }
 .botao:hover {
     background-color: #0d4fa8;
+}
+/* =========================
+   CARDS DAS ÁREAS
+========================= */
+
+.areas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1380px;
+    margin: 40px auto;
+    padding: 0 30px;
+}
+
+.area-card {
+    border-radius: 18px;
+    padding: 28px;
+    min-height: 240px;
+
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid rgba(0, 0, 0, 0.08);
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.area-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 16px 35px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================
+   CABEÇALHO DO CARD
+========================= */
+
+.card-topo {
+    display: flex;
+    align-items: flex-start;
+    gap: 22px;
+}
+
+.card-icone {
+    width: 90px;
+    height: 90px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    font-size: 42px;
+}
+
+.area-card h2 {
+    margin: 8px 0 12px;
+
+    font-size: 28px;
+    color: #08275a;
+}
+
+.area-card p {
+    margin: 0;
+
+    font-size: 18px;
+    line-height: 1.45;
+
+    color: #172033;
+}
+
+
+/* =========================
+   BOTÕES
+========================= */
+
+.area-card .btn-area {
+    margin-top: auto;
+
+    display: block;
+
+    width: 100%;
+
+    padding: 15px 20px;
+
+    border-radius: 8px;
+
+    text-align: center;
+
+    text-decoration: none;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    color: white;
+
+    transition: filter 0.2s ease,
+                transform 0.2s ease;
+}
+
+.area-card .btn-area:hover {
+    filter: brightness(0.92);
+
+    transform: scale(1.01);
+}
+
+
+/* =========================
+   CARD ALUNO
+========================= */
+
+.card-aluno {
+    background:
+        linear-gradient(
+            135deg,
+            #f4faff,
+            #e3f2ff
+        );
+
+    border-color: #bfdcff;
+}
+
+.card-aluno .card-icone {
+    background: #d8ecff;
+    color: #1264d6;
+}
+
+.card-aluno .btn-area {
+    background:
+        linear-gradient(
+            90deg,
+            #1264d6,
+            #176fe5
+        );
+}
+
+
+/* =========================
+   CARD PROFESSOR
+========================= */
+
+.card-professor {
+    background:
+        linear-gradient(
+            135deg,
+            #f4fff5,
+            #e1f8e4
+        );
+
+    border-color: #bce8c1;
+}
+
+.card-professor .card-icone {
+    background: #d3f4d5;
+    color: #13913b;
+}
+
+.card-professor .btn-area {
+    background:
+        linear-gradient(
+            90deg,
+            #0f9138,
+            #119e40
+        );
+}
+
+
+/* =========================
+   CARD ADMINISTRATIVO
+========================= */
+
+.card-admin {
+    background:
+        linear-gradient(
+            135deg,
+            #faf7ff,
+            #eee6ff
+        );
+
+    border-color: #d7c7ff;
+}
+
+.card-admin .card-icone {
+    background: #e1d4ff;
+    color: #6424d6;
+}
+
+.card-admin .btn-area {
+    background:
+        linear-gradient(
+            90deg,
+            #5420cd,
+            #6e24df
+        );
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 900px) {
+
+    .areas {
+        grid-template-columns: 1fr;
+    }
+
 }
